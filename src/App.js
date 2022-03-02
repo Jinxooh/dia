@@ -1,11 +1,12 @@
 import { Route, Routes } from 'react-router-dom';
-import { Home, About } from './pages';
-import { Header } from './components';
+import { Header, Home, About } from './pages';
 import styled from 'styled-components'
 
 const AppBlock = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
 `
 
 const App = () => {

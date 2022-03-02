@@ -14,7 +14,8 @@ const LinkBlock = styled.div`
 `
 
 const TopBlock = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: space-between;
 `
 
