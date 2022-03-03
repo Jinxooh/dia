@@ -2,9 +2,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 
 const HeaderBlock = styled.div`
-  width: 1024px;
-  display: grid;
-  justify-content: center;
+  /* width: 1200px; */
 `
 
 const LinkBlock = styled.div`
@@ -16,7 +14,6 @@ const LinkBlock = styled.div`
 const TopBlock = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  justify-content: space-between;
 `
 
 const Logo = styled.div`
@@ -26,6 +23,7 @@ const Title = styled.span`
 `
 
 const LoginBlock = styled.div`
+  justify-self: flex-end;
 `
 
 const Button = styled.button``
@@ -34,7 +32,9 @@ const Header = () => {
   return (
     <HeaderBlock>
       <TopBlock>
-        <Logo>LOGO~</Logo>
+        <Logo>
+        <Link to="/">LOGO</Link>
+        </Logo>
         <Title>재해영향평가</Title>
         <LoginBlock>
           <Button>로그인</Button>
@@ -44,10 +44,10 @@ const Header = () => {
       </TopBlock>
       <LinkBlock>
         <Link to="/about">재해영향평가소개</Link>
-        <Link to="/about">사업조회</Link>
-        <Link to="/about">통계</Link>
-        <Link to="/about">국민참여</Link>
-        <Link to="/about">건강영향평가</Link>
+        <Link to="/search">사업조회</Link>
+        <Link to="/statistic">통계</Link>
+        <Link to="/join">국민참여</Link>
+        <Link to="/assessment">건강영향평가</Link>
       </LinkBlock>
     </HeaderBlock>
   );

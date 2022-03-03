@@ -1,9 +1,17 @@
 import Home from './Home'
 import About from './About'
 import Header from './Header'
+import Assessment from './Assessment'
+import Join from './Join'
+import Search from './Search'
+import Statistic from './Statistic'
 
 export {
   Home,
   About,
   Header,
+  Assessment,
+  Join,
+  Search,
+  Statistic,
 };
