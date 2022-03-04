@@ -27,14 +27,15 @@ const MenuTitle = styled.div`
 `
 
 const LeftMenu = ({ children, data }) => {
-  const { name, engName } = data;
+  const { name, engName, menuList } = data;
+  console.log(menuList)
   return (
     <LeftMenuStyle>
       <MenuTitle>
         <span>{name}</span>
         <span>{engName}</span>
       </MenuTitle>  
-      {children}
+      {/* { menuList && menuList.foreach(item => console.log(item.name))} */}
     </LeftMenuStyle>
   )
 }
