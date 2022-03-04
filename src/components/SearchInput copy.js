@@ -19,7 +19,7 @@ const SearchInputStyle = styled(BasicInput)`
 const SearchInput = () => {
   return (
     <InputContainer>
-      <SearchInputStyle size={"large"} placeholder={"사업명을 입력하세요.1"}></SearchInputStyle>
+      <SearchInputStyle size={"large"} placeholder={"사업명을 입력하세요.1"} />
       <BasicButton color={'#ffffff'} bgColor={'#093d62'} size={'large'}>검색</BasicButton>
     </InputContainer>
   )

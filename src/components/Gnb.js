@@ -34,11 +34,15 @@ const LinkBlock = styled.div`
     text-decoration: none;
     align-items: center;
     background-color: #1f79ba;
+
+    &:hover, &:active {
+      color: #cccccc;
+    }
   }
 `
 
 const Gnb = ({ children, color }) => {
-  const [gnbMenu, setGnbMenu] = useState(true);
+  const [gnbMenu, setGnbMenu] = useState(false);
 
   return (
     <LinkBackground>
@@ -49,7 +53,7 @@ const Gnb = ({ children, color }) => {
         <Link to="/join">국민참여</Link>
         <Link to="/assessment">건강영향평가</Link>
       </LinkBlock>
-      <GnbMenuStyle isShow={gnbMenu}>test</GnbMenuStyle>
+      {/* <GnbMenuStyle isShow={gnbMenu}>test</GnbMenuStyle> */}
     </LinkBackground>
   )
 }
