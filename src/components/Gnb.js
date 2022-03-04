@@ -48,7 +48,7 @@ const Gnb = ({ children, color }) => {
     <LinkBackground>
       <LinkBlock onMouseEnter={() => setGnbMenu(true)} onMouseLeave={() => setGnbMenu(false)}>
         <Link to="/about">재해영향평가소개</Link>
-        <Link to="/search">사업조회</Link>
+        <Link to="/information">사업조회</Link>
         <Link to="/statistic">통계</Link>
         <Link to="/join">국민참여</Link>
         <Link to="/assessment">건강영향평가</Link>

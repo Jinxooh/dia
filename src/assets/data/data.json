@@ -15,5 +15,37 @@
       "name": "사후재해조사",
       "imgSrc": "https://www.eiass.go.kr/images/main/4.jpg"
     }
-  ]
+  ],
+  "leftMenu": {
+    "about": {
+      "name": "재해영향평가소개",
+      "engName": "About",
+      "menuList": [
+        {
+          "name": "재해영향평가제도 안내"
+        },
+        {
+          "name": "법령정보"
+        },
+        {
+          "name": "작성가이드 라인"
+        },
+        {
+          "name": "측정망 연계"
+        }
+      ]
+    },
+    "information": {
+      "name": "사업조회",
+      "engName": "Information",
+      "menuList": [
+        {
+          "name": "평가정보조회",
+          "list": [
+            "전체목록", "전략재해영향평가", "소규모재해영향평가", "재해영향평가", "사후재해조사", "사전재해성검토"
+          ]
+        }
+      ]
+    }
+  }
 }

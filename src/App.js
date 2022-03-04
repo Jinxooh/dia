@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
-import { Home, About, Assessment, Join, Search, Statistic } from './pages';
+import { Home, About, Assessment, Join, Information, Statistic } from './pages';
 import { Header, Gnb } from './components';
+import GlobalStyle from './assets/GlobalStyle';
 import styled from 'styled-components'
 
 const AppBlock = styled.section`
@@ -20,6 +21,7 @@ const RouteBlock = styled.div`
 const App = () => {
   return (
     <AppBlock>
+      <GlobalStyle />
       <Header />
       <Gnb />
       <RouteBlock>
@@ -28,7 +30,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/assessment" element={<Assessment />} />
           <Route path="/join" element={<Join />} />
-          <Route path="/search" element={<Search />} />
+          <Route path="/information" element={<Information />} />
           <Route path="/statistic" element={<Statistic />} />
         </Routes>
       </RouteBlock>
