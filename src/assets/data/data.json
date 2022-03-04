@@ -1,0 +1,19 @@
+{
+  "mainCardData": [{
+      "name": "전략재해영향평가",
+      "imgSrc": "https://www.eiass.go.kr/images/main/1.jpg"
+    },
+    {
+      "name": "소규모재해영향평가",
+      "imgSrc": "https://www.eiass.go.kr/images/main/2.jpg"
+    },
+    {
+      "name": "재해영향평가",
+      "imgSrc": "https://www.eiass.go.kr/images/main/3.jpg"
+    },
+    {
+      "name": "사후재해조사",
+      "imgSrc": "https://www.eiass.go.kr/images/main/4.jpg"
+    }
+  ]
+}

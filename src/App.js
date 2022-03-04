@@ -7,7 +7,7 @@ const AppBlock = styled.section`
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-rows: 80px 70px 1fr;
+  grid-template-rows: 80px 60px 1fr;
   grid-template-columns: 1fr;
   /* justify-content: center; */
 `

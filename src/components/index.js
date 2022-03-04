@@ -5,6 +5,7 @@ import Gnb from './Gnb'
 import BasicButton from './BasicButton'
 import BasicInput from './BasicInput'
 import SearchInput from './SearchInput'
+import MainList from './MainList'
 
 export {
   LeftMenu,
@@ -14,4 +15,5 @@ export {
   BasicButton,
   BasicInput,
   SearchInput,
+  MainList,
 }
