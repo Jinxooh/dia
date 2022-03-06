@@ -6,6 +6,7 @@ import BasicButton from './BasicButton'
 import BasicInput from './BasicInput'
 import SearchInput from './SearchInput'
 import MainList from './MainList'
+import ContentContainer from './ContentContainer'
 
 export {
   LeftMenu,
@@ -16,4 +17,5 @@ export {
   BasicInput,
   SearchInput,
   MainList,
+  ContentContainer,
 }

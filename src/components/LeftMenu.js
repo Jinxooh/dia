@@ -73,6 +73,15 @@ const MenuList = styled.div`
       display: flex;
       align-items: center;
       height: 32px;
+
+      ${props =>
+      props.active === 'active' &&
+      css`
+        a {
+          color: #1f79ba;
+        }  
+      `}
+
       a {
         font-size: 15px;
         color: #555;
@@ -107,7 +116,10 @@ const LeftMenu = ({ children, data }) => {
         </SubMenu>
         {item.list && <MenuList>
           <ul>
-            {item.list.map(listItem => <li><Link to={listItem.url}>{listItem.name}</Link></li>) }
+            {item.list.map(listItem => 
+            <li active={pathname === listItem.url ? 'active' : ''}>
+              <Link to={listItem.url}>{listItem.name}</Link>
+            </li>) }
           </ul>
         </MenuList>}
       </>)
