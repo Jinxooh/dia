@@ -22,16 +22,20 @@
       "engName": "About",
       "menuList": [
         {
-          "name": "재해영향평가제도 안내"
+          "name": "재해영향평가제도 안내",
+          "url": "/about"
         },
         {
-          "name": "법령정보"
+          "name": "법령정보",
+          "url": "/lawInfo"
         },
         {
-          "name": "작성가이드 라인"
+          "name": "작성가이드 라인",
+          "url": "/guideline"
         },
         {
-          "name": "측정망 연계"
+          "name": "측정망 연계",
+          "url": "/connection"
         }
       ]
     },
@@ -41,9 +45,95 @@
       "menuList": [
         {
           "name": "평가정보조회",
+          "url": "/information",
           "list": [
-            "전체목록", "전략재해영향평가", "소규모재해영향평가", "재해영향평가", "사후재해조사", "사전재해성검토"
+            {
+              "name": "전체목록",
+              "url": "/information"
+            },
+            {
+              "name" : "전략재해영향평가",
+              "url": "/1"
+            },
+            {
+              "name" : "소규모재해영향평가",
+              "url": "/2"
+            },
+            {
+              "name" : "재해영향평가",
+              "url": "/3"
+            },
+            {
+              "name" : "사후재해조사",
+              "url": "/4"
+            },
+            {
+              "name" : "사전재해성검토",
+              "url": "/5"
+            }
           ]
+        }
+      ]
+    },
+    "statistic": {
+      "name": "협의통계",
+      "engName": "Statistic",
+      "menuList": [
+        {
+          "name": "협의현황 조회",
+          "url": "/statistic"
+        },
+        {
+          "name": "협의대장 조회",
+          "url": "/1"
+        }
+      ]
+    },
+    "join": {
+      "name": "국민참여",
+      "engName": "Public participation",
+      "menuList": [
+        {
+          "name": "협의현황현황",
+          "url": "/join"
+        },
+        {
+          "name": "평가항목 결정내용 공람",
+          "url": "/1"
+        },
+        {
+          "name": "평가서 초안 공람",
+          "url": "/2"
+        },
+        {
+          "name": "행정처분현황",
+          "url": "/3"
+        },
+        {
+          "name": "사용자지원",
+          "url": "/4"
+        }
+      ]
+    },
+    "assessment": {
+      "name": "건강영향평가",
+      "engName": "Assessment",
+      "menuList": [
+        {
+          "name": "건강영향평가 안내",
+          "url": "/statistic"
+        },
+        {
+          "name": "국외 운용현황",
+          "url": "/1"
+        },
+        {
+          "name": "현황자료",
+          "url": "/2"
+        },
+        {
+          "name": "공간정보서비스",
+          "url": "/3"
         }
       ]
     }

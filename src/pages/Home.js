@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { MainList, SearchInput } from '../components';
 import Data from '../assets/data/data.json'

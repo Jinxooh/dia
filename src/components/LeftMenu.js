@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import { Link, useLocation } from 'react-router-dom'
 
 const LeftMenuStyle = styled.div`
   width: 250px;
@@ -25,17 +26,92 @@ const MenuTitle = styled.div`
     font-weight: 600;
   }
 `
+const SubMenu = styled.div`
+  width: 100%;
+  height: 60px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  a {
+    text-decoration: none;
+    color: #222;
+    margin-left: 15px;
+  }
+
+  &:hover {
+    background-color: #1f578b;
+    border-color: #1f578b;
+    a { 
+      color: #fff;
+    }
+  }
+
+  ${props =>
+    props.active === 'active' &&
+    css`
+        background-color: #1f578b;
+        border-color: #1f578b;
+        a {
+          color: #fff; 
+        }
+    `}
+`
+
+const MenuList = styled.div`
+  ul {
+    list-style: none;
+    padding-left: 20px;
+
+    li {
+      display: flex;
+      align-items: center;
+      height: 32px;
+      a {
+        font-size: 15px;
+        color: #555;
+        font-weight: 600;
+        text-decoration: none;
+
+        &:hover {
+          color: #1f79ba;
+        }
+      }
+    }
+  }
+`
+
 
 const LeftMenu = ({ children, data }) => {
   const { name, engName, menuList } = data;
-  console.log(menuList)
+  const { pathname } = useLocation();
+
   return (
     <LeftMenuStyle>
       <MenuTitle>
         <span>{name}</span>
         <span>{engName}</span>
       </MenuTitle>  
-      {/* { menuList && menuList.foreach(item => console.log(item.name))} */}
+      { menuList && menuList.map(item =>
+      <>
+        <SubMenu active={pathname === item.url ? 'active' : ''}>
+          <Link to={item.url}>
+            {item.name}
+          </Link>
+        </SubMenu>
+        {item.list && <MenuList>
+          <ul>
+            {item.list.map(listItem => <li><Link to={listItem.url}>{listItem.name}</Link></li>) }
+          </ul>
+        </MenuList>}
+      </>)
+      }
     </LeftMenuStyle>
   )
 }
