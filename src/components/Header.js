@@ -24,12 +24,16 @@ const Logo = styled.div`
 const Title = styled.span`
   display: flex;
   align-items: flex-end;
-  color: #777777;
-  font-weight: 700;
-  font-size: 20px;
   margin-bottom: 15px;
   user-select: none;
   cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: #777777;
+    font-weight: 700;
+    font-size: 20px;
+  }
 `
 
 const LoginBlock = styled.div`
@@ -50,7 +54,11 @@ const Header = () => {
         <Link to="/">
           <Logo />
         </Link>
-        <Title>재해영향평가</Title>
+        <Title>
+          <Link to={"/"}>
+            재해영향평가
+          </Link>
+        </Title>
         <LoginBlock>
           <Link to="/login"><Button>로그인</Button></Link>
           <Link to="/"><Button>회원가입</Button></Link>
