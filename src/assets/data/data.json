@@ -1,19 +1,44 @@
 {
   "mainCardData": [{
+      "id": 1,
       "name": "전략재해영향평가",
-      "imgSrc": "https://www.eiass.go.kr/images/main/1.jpg"
+      "imgSrc": "../assets/img/1.jpg"
     },
     {
+      "id": 2,
       "name": "소규모재해영향평가",
-      "imgSrc": "https://www.eiass.go.kr/images/main/2.jpg"
+      "imgSrc": "../assets/img/2.jpg"
     },
     {
+      "id": 3,
       "name": "재해영향평가",
-      "imgSrc": "https://www.eiass.go.kr/images/main/3.jpg"
+      "imgSrc": "../assets/img/3.jpg"
     },
     {
+      "id": 4,
       "name": "사후재해조사",
-      "imgSrc": "https://www.eiass.go.kr/images/main/4.jpg"
+      "imgSrc": "../assets/img/4.jpg"
+    }
+  ],
+  "mainListData": [{
+      "id": 1,
+      "name": "전략재해영향평가",
+      "url": "/information"     
+    },
+    {
+      "id": 2,
+      "name": "소규모재해영향평가",
+      "url": "/information"
+    },
+    {
+      "id": 3,
+      "name": "재해영향평가",
+      "url": "/information"
+    },
+    {
+      "id": 4,
+      "name": "사후재해조사",
+      "url": "/information"
     }
   ],
   "leftMenu": {
@@ -22,18 +47,22 @@
       "engName": "About",
       "menuList": [
         {
+          "id": 1,
           "name": "재해영향평가제도 안내",
           "url": "/about"
         },
         {
+          "id": 2,
           "name": "법령정보",
           "url": "/lawInfo"
         },
         {
+          "id": 3,
           "name": "작성가이드 라인",
           "url": "/guideline"
         },
         {
+          "id": 4,
           "name": "측정망 연계",
           "url": "/connection"
         }
@@ -44,30 +73,37 @@
       "engName": "Information",
       "menuList": [
         {
+          "id": 1,
           "name": "평가정보조회",
           "url": "/information",
           "list": [
             {
+              "id": 1,
               "name": "전체목록",
               "url": "/information"
             },
             {
+              "id": 2,
               "name" : "전략재해영향평가",
               "url": "/1"
             },
             {
+              "id": 3,
               "name" : "소규모재해영향평가",
               "url": "/2"
             },
             {
+              "id": 4,
               "name" : "재해영향평가",
               "url": "/3"
             },
             {
+              "id": 5,
               "name" : "사후재해조사",
               "url": "/4"
             },
             {
+              "id": 6,
               "name" : "사전재해성검토",
               "url": "/5"
             }
@@ -80,10 +116,12 @@
       "engName": "Statistic",
       "menuList": [
         {
+          "id": 1,
           "name": "협의현황 조회",
           "url": "/statistic"
         },
         {
+          "id": 2,
           "name": "협의대장 조회",
           "url": "/1"
         }
@@ -94,22 +132,27 @@
       "engName": "Public participation",
       "menuList": [
         {
+          "id": 1,
           "name": "협의현황현황",
           "url": "/join"
         },
         {
+          "id": 2,
           "name": "평가항목 결정내용 공람",
           "url": "/1"
         },
         {
+          "id": 3,
           "name": "평가서 초안 공람",
           "url": "/2"
         },
         {
+          "id": 4,
           "name": "행정처분현황",
           "url": "/3"
         },
         {
+          "id": 5,
           "name": "사용자지원",
           "url": "/4"
         }
@@ -120,18 +163,22 @@
       "engName": "Assessment",
       "menuList": [
         {
+          "id": 1,
           "name": "건강영향평가 안내",
           "url": "/statistic"
         },
         {
+          "id": 2,
           "name": "국외 운용현황",
           "url": "/1"
         },
         {
+          "id": 3,
           "name": "현황자료",
           "url": "/2"
         },
         {
+          "id": 4,
           "name": "공간정보서비스",
           "url": "/3"
         }

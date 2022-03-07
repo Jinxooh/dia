@@ -11,13 +11,14 @@ const CardContainerStyle = styled.section`
 
 const Home = () => {
   const cardData = Data.mainCardData;
+  const listData = Data.mainListData;
   return (
     <>
       <SearchInput />
       <CardContainerStyle>
-        { cardData && cardData.map(item => <Card imgSrc={item.imgSrc}>{item.name}</Card>)}
+        { cardData && cardData.map(item => <Card item={item} key={item.id} imgSrc={item.imgSrc}>{item.name}</Card>)}
       </CardContainerStyle>
-      <MainList />
+      <MainList data={listData}/>
     </>
   );
 };

@@ -108,7 +108,7 @@ const LeftMenu = ({ children, data }) => {
         <span>{engName}</span>
       </MenuTitle>  
       { menuList && menuList.map(item =>
-      <>
+      <div key={item.id}>
         <SubMenu active={pathname === item.url ? 'active' : ''}>
           <Link to={item.url}>
             {item.name}
@@ -117,12 +117,12 @@ const LeftMenu = ({ children, data }) => {
         {item.list && <MenuList>
           <ul>
             {item.list.map(listItem => 
-            <li active={pathname === listItem.url ? 'active' : ''}>
+            <li key={listItem.id} active={pathname === listItem.url ? 'active' : ''}>
               <Link to={listItem.url}>{listItem.name}</Link>
             </li>) }
           </ul>
         </MenuList>}
-      </>)
+      </div>)
       }
     </LeftMenuStyle>
   )

@@ -1,5 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import img1 from '../assets/img/1.jpg'
+import img2 from '../assets/img/2.jpg'
+import img3 from '../assets/img/3.jpg'
+import img4 from '../assets/img/4.jpg'
 
 const CardStyle = styled.div`
   width: 230px;
@@ -18,10 +22,9 @@ const CardStyle = styled.div`
   }
   
 `
-const Image = styled.div`
+const Image = styled.img`
   width: 71px;
   height: 89px;
-  background: url(${(props) => props.imgSrc}) no-repeat;
 `
 
 const Label = styled.label`
@@ -30,10 +33,15 @@ const Label = styled.label`
   color: #093d62;
 `
 
-const Card = ({ children, imgSrc}) => {
+const Card = ({ children, imgSrc, item }) => {
+  let img = img1;
+  if (item.id === '2') img = img2
+  if (item.id === '3') img = img3
+  if (item.id === '4') img = img4
+
   return (
     <CardStyle>
-      <Image imgSrc={imgSrc}></Image>
+      <Image src={img}></Image>
       <Label>
         {children}
       </Label>
