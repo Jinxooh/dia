@@ -4,7 +4,7 @@ import { Header, Gnb } from './components';
 import GlobalStyle from './assets/GlobalStyle';
 import styled from 'styled-components'
 
-const AppBlock = styled.section`
+const AppBlock = styled.section`  
   width: 100%;
   height: 100vh;
   display: grid;
