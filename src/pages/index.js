@@ -6,6 +6,7 @@ import Information from './Information'
 import Statistic from './Statistic'
 import NotFound from './NotFound'
 import Login from './Login'
+import Disaster from './Disaster'
 
 export {
   Home,
@@ -16,4 +17,5 @@ export {
   Statistic,
   NotFound,
   Login,
+  Disaster,
 };

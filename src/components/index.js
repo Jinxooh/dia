@@ -8,6 +8,8 @@ import SearchInput from './SearchInput'
 import MainList from './MainList'
 import ContentContainer from './ContentContainer'
 import Table from './Table'
+import RadioGroup from './RadioGroup'
+import CheckBox from './CheckBox'
 
 export {
   LeftMenu,
@@ -20,4 +22,6 @@ export {
   MainList,
   ContentContainer,
   Table,
+  RadioGroup,
+  CheckBox,
 }

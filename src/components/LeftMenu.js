@@ -74,14 +74,6 @@ const MenuList = styled.div`
       align-items: center;
       height: 32px;
 
-      ${props =>
-      props.active === 'active' &&
-      css`
-        a {
-          color: #1f79ba;
-        }  
-      `}
-
       a {
         font-size: 15px;
         color: #555;
@@ -91,7 +83,14 @@ const MenuList = styled.div`
         &:hover {
           color: #1f79ba;
         }
+        
       }
+
+      ${props =>
+      props.active === 'active' &&
+      css`
+          color: pink;
+      `}
     }
   }
 `
@@ -109,7 +108,7 @@ const LeftMenu = ({ children, data }) => {
       </MenuTitle>  
       { menuList && menuList.map(item =>
       <div key={item.id}>
-        <SubMenu active={pathname === item.url ? 'active' : ''}>
+        <SubMenu active={pathname.indexOf(item.url) > -1 ? 'active' : ''}>
           <Link to={item.url}>
             {item.name}
           </Link>

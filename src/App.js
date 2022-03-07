@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import { Home, About, Assessment, Join, Information, Statistic, NotFound, Login } from './pages';
+import { Home, About, Assessment, Join, Information, Statistic, NotFound, Login, Disaster } from './pages';
 import { Header, Gnb } from './components';
 import GlobalStyle from './assets/GlobalStyle';
 import styled from 'styled-components'
@@ -30,7 +30,8 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/assessment" element={<Assessment />} />
           <Route path="/join" element={<Join />} />
-          <Route path="/information" element={<Information />} />
+          <Route path="/information" element={<Information />}></Route>
+          <Route path="/information/disaster" element={<Disaster />}></Route>
           <Route path="/statistic" element={<Statistic />} />
           <Route path="/login" element={<Login />} />
           <Route path="/*" element={<NotFound />} />
