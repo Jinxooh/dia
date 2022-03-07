@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import { Home, About, Assessment, Join, Information, Statistic } from './pages';
+import { Home, About, Assessment, Join, Information, Statistic, NotFound } from './pages';
 import { Header, Gnb } from './components';
 import GlobalStyle from './assets/GlobalStyle';
 import styled from 'styled-components'
@@ -32,6 +32,7 @@ const App = () => {
           <Route path="/join" element={<Join />} />
           <Route path="/information" element={<Information />} />
           <Route path="/statistic" element={<Statistic />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </RouteBlock>
     </AppBlock>
