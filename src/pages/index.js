@@ -5,6 +5,7 @@ import Join from './Join'
 import Information from './Information'
 import Statistic from './Statistic'
 import NotFound from './NotFound'
+import Login from './Login'
 
 export {
   Home,
@@ -14,4 +15,5 @@ export {
   Information,
   Statistic,
   NotFound,
+  Login,
 };

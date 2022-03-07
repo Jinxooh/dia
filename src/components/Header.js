@@ -37,6 +37,10 @@ const LoginBlock = styled.div`
   align-items: center;
   justify-self: end;
   margin-right: 15px;
+
+  a {
+    text-decoration: none;
+  }
 `
 
 const Header = () => {
@@ -48,9 +52,9 @@ const Header = () => {
         </Link>
         <Title>재해영향평가</Title>
         <LoginBlock>
-          <Button>로그인</Button>
-          <Button>회원가입</Button>
-          <Button>사이트맵</Button>
+          <Link to="/login"><Button>로그인</Button></Link>
+          <Link to="/"><Button>회원가입</Button></Link>
+          <Link to="/"><Button>사이트맵</Button></Link>
         </LoginBlock>
       </TopBlock>
     </HeaderBlock>

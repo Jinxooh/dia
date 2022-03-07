@@ -1,5 +1,12 @@
 import { ContentContainer, LeftMenu, MainContainer } from "../components";
 import Data from '../assets/data/data.json'
+import styled from "styled-components";
+
+const SubTitle = styled.div`
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 25px;
+`
 
 const Assessment = () => {
   const { assessment } = Data.leftMenu;
@@ -7,8 +14,8 @@ const Assessment = () => {
     <MainContainer>
       <LeftMenu data={assessment}></LeftMenu>
       <ContentContainer>
-        <h1>소개</h1>
-        <p>리액트 라우터를 사용해 보는 프로젝트입니다.</p>
+        <SubTitle>건강영향평가 소개</SubTitle>
+        <p>.</p>
       </ContentContainer>
     </MainContainer>
   );

@@ -1,5 +1,12 @@
 import { ContentContainer, LeftMenu, MainContainer } from "../components";
 import Data from '../assets/data/data.json'
+import styled from "styled-components";
+
+const SubTitle = styled.div`
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 25px;
+`
 
 const Join = () => {
   const { join } = Data.leftMenu;
@@ -7,8 +14,8 @@ const Join = () => {
     <MainContainer>
       <LeftMenu data={join}></LeftMenu>
       <ContentContainer>
-        <h1>소개</h1>
-        <p>리액트 라우터를 사용해 보는 프로젝트입니다.</p>
+        <SubTitle>협의진행현황 - 전략재해영향평가</SubTitle>
+        <p>.</p>
       </ContentContainer>
     </MainContainer>
   );
