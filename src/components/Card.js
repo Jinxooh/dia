@@ -35,9 +35,9 @@ const Label = styled.label`
 
 const Card = ({ children, imgSrc, item }) => {
   let img = img1;
-  if (item.id === '2') img = img2
-  if (item.id === '3') img = img3
-  if (item.id === '4') img = img4
+  if (item.id === 2) img = img2
+  if (item.id === 3) img = img3
+  if (item.id === 4) img = img4
 
   return (
     <CardStyle>
