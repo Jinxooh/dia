@@ -84,13 +84,10 @@ const MenuList = styled.div`
           color: #1f79ba;
         }
         
+        &.active {
+          color: #1f79ba;
+        }
       }
-
-      ${props =>
-      props.active === 'active' &&
-      css`
-          color: pink;
-      `}
     }
   }
 `
@@ -116,8 +113,8 @@ const LeftMenu = ({ children, data }) => {
         {item.list && <MenuList>
           <ul>
             {item.list.map(listItem => 
-            <li key={listItem.id} active={pathname === listItem.url ? 'active' : ''}>
-              <Link to={listItem.url}>{listItem.name}</Link>
+            <li key={listItem.id}>
+              <Link className={pathname === listItem.url ? 'active' : ''} to={listItem.url}>{listItem.name}</Link>
             </li>) }
           </ul>
         </MenuList>}
