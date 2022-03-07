@@ -7,6 +7,7 @@ import BasicInput from './BasicInput'
 import SearchInput from './SearchInput'
 import MainList from './MainList'
 import ContentContainer from './ContentContainer'
+import Table from './Table'
 
 export {
   LeftMenu,
@@ -18,4 +19,5 @@ export {
   SearchInput,
   MainList,
   ContentContainer,
+  Table,
 }
